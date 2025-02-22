@@ -1,22 +1,3 @@
-# EC2 Instance Tag Automation
-
-I created a Python script to automatically add environment tags to EC2 instances in AWS. This project helped me learn AWS automation using Python and Boto3.
-
-[Suggested image: Screenshot of successfully tagged EC2 instances in AWS Console]
-
-## What I Used
-- Python
-- AWS (EC2)
-- Boto3 SDK
-
-## What I Built
-A script that:
-- Connects to AWS using Boto3
-- Fetches all EC2 instances in my account
-- Adds environment tags to instances that don't have them
-- Displays successful tagging operations
-
-```python
 import boto3
 
 ec2_client = boto3.client('ec2', region_name="us-east-1")
@@ -48,8 +29,3 @@ response = ec2_resource.create_tags(
         },
     ]
 )
-```
-
-The script successfully tagged my EC2 instance with "environment: prod" 
-
-![tag](https://github.com/Princeton45/ec2-tag-automation/blob/main/images/tag.png)
