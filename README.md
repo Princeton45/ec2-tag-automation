@@ -2,8 +2,6 @@
 
 I created a Python script to automatically add environment tags to EC2 instances in AWS. This project helped me learn AWS automation using Python and Boto3.
 
-[Suggested image: Screenshot of successfully tagged EC2 instances in AWS Console]
-
 ## What I Used
 - Python
 - AWS (EC2)
